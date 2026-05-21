@@ -562,6 +562,50 @@ body::after {
   letter-spacing: 0.3px;
 }
 
+/* ═══ GIFT SECTION ═══ */
+.gift-section {
+  background: linear-gradient(135deg, var(--offwhite) 0%, var(--sage-ultra) 100%);
+  border: 1px solid var(--sage-pale);
+  border-left: 4px solid var(--sage-mid);
+  padding: clamp(18px,4vw,26px) clamp(20px,5vw,32px);
+  margin: 4px 0 18px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+.gift-section::before {
+  content: '';
+  position: absolute; top: -30px; right: -30px;
+  width: 100px; height: 100px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(107,143,113,0.12) 0%, transparent 70%);
+}
+.gift-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: block;
+}
+.gift-label {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(7.5px,1.8vw,9px);
+  letter-spacing: 4px; text-transform: uppercase;
+  color: var(--sage-deep);
+  margin-bottom: 12px; display: block;
+  font-weight: 700;
+}
+.gift-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(14.5px,3.3vw,17px);
+  color: var(--ink-mid);
+  line-height: 1.85;
+  font-weight: 400;
+}
+.gift-text em {
+  font-style: italic;
+  color: var(--sage-deep);
+  font-size: clamp(15px,3.5vw,18px);
+  font-weight: 600;
+}
+
 /* ═══ DRESS CODE ═══ */
 .dress {
   background: linear-gradient(135deg, var(--sage-pale) 0%, var(--sage-ultra) 100%);
@@ -891,6 +935,23 @@ body::after {
       <div class="divider rv">
         <div class="divider-line"></div>
         <span class="divider-orn">❧</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <!-- GIFT MESSAGE -->
+      <div class="gift-section rv">
+        <div class="gift-icon">🏡</div>
+        <span class="gift-label">Mot sur les cadeaux</span>
+        <p class="gift-text">
+          Nous avons déjà beaucoup de bonheur à partager ensemble.<br><br>
+          <em>Votre présence à notre mariage est le plus beau des cadeaux.</em><br><br>
+          Pour ceux qui souhaitent nous gâter davantage, des cartes-cadeaux seraient grandement appréciées afin de nous aider à construire notre nouveau foyer et concrétiser nos projets à deux. 🌿
+        </p>
+      </div>
+
+      <div class="divider rv">
+        <div class="divider-line"></div>
+        <span class="divider-orn">✦ ✦ ✦</span>
         <div class="divider-line"></div>
       </div>
 
