@@ -562,6 +562,47 @@ body::after {
   letter-spacing: 0.3px;
 }
 
+.interac-box {
+  margin-top: 18px;
+  background: linear-gradient(135deg, var(--sage-pale) 0%, var(--sage-ultra) 100%);
+  border: 1px solid var(--sage-light);
+  border-left: 4px solid var(--sage-deep);
+  padding: 16px 20px;
+  text-align: left;
+}
+.interac-top {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 12px;
+}
+.interac-icon { font-size: 22px; }
+.interac-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(8px,1.8vw,10px);
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--sage-deep); font-weight: 700;
+}
+.interac-row {
+  display: flex; align-items: baseline;
+  gap: 10px; margin-bottom: 6px;
+}
+.interac-row:last-child { margin-bottom: 0; }
+.interac-key {
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(10px,2.2vw,12px);
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  min-width: 90px;
+  flex-shrink: 0;
+}
+.interac-val {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(14px,3.2vw,16px);
+  color: var(--sage-ink);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 /* ═══ GIFT SECTION ═══ */
 .gift-section {
   background: linear-gradient(135deg, var(--offwhite) 0%, var(--sage-ultra) 100%);
@@ -948,6 +989,20 @@ body::after {
           <em>Votre présence à notre mariage est le plus beau des cadeaux.</em><br><br>
           Pour ceux qui souhaitent nous gâter davantage, des cartes-cadeaux seraient grandement appréciées afin de nous aider à construire notre nouveau foyer et concrétiser nos projets à deux. 🌿
         </p>
+        <div class="interac-box">
+          <div class="interac-top">
+            <span class="interac-icon">💸</span>
+            <span class="interac-title">Petit geste via Interac</span>
+          </div>
+          <div class="interac-row">
+            <span class="interac-key">Au nom de</span>
+            <span class="interac-val">Walter Djiomo</span>
+          </div>
+          <div class="interac-row">
+            <span class="interac-key">Numéro</span>
+            <span class="interac-val">+1 263 882 1215</span>
+          </div>
+        </div>
       </div>
 
       <div class="divider rv">
